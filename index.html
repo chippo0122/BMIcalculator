@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <script src="https://kit.fontawesome.com/7fc9b57457.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="bmihead bg-dark py-5">
+            <div class="row g-0 justify-content-center align-items-center">
+                <div class="col-md-4 pe-5 d-md-block d-none">
+                    <img class="d-block ms-auto" src="helpers/assets/BMICLogo.png" alt="">
+                </div>
+                <div class="col-md-4 col-12 insert-sec px-5">
+                    <label for="height" class="d-block text-lightorg">身高cm</label>
+                    <input id="height" type="text" class="form-control border border-lightorg" placeholder="請輸入身高">
+                    <label for="weight" class="d-block text-lightorg">體重kg</label>
+                    <input id="weight" type="text" class="form-control border border-lightorg" placeholder="請輸入體重">
+                </div>
+                <div class="col-md-4 col-12 px-5">
+                    <div class="check-sec">
+                        <input class="btn-result mt-3" type="button" value="看結果">
+                        <div class="d-none refresh position-relative mt-3 border border-5">
+                            <p class="bmi-result fs-3 m-0"></p>
+                            <span class="text-center">BMI</span>
+                            <a href="#" class="refresh-btn position-absolute">
+                                <i class="fas fa-redo-alt text-dark"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="output-sec py-5">
+            <div class="container">
+                <h2 class="fs-2 text-center mb-3">BMI紀錄</h2>
+                <ul class="op list-unstyled">
+                </ul>
+                <a class="clear d-block w-25 btn btn-lightorg mx-auto">清除</a>
+            </div>
+        </div>
+        <footer class="bg-warning">
+            <img src="helpers/assets/BMICLogo.png" alt="">
+        </footer>
+    </div>
+    <script src="all.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+/*!
+ * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+// scss-docs-start import-stack
+// Configuration
+@import "helpers/bootstrap/scss/functions";
+@import "helpers/bootstrap/scss/variables";
+@import "helpers/bootstrap/scss/mixins";
+@import "helpers/bootstrap/scss/utilities";
+
+// Layout & components
+@import "helpers/bootstrap/scss/root";
+@import "helpers/bootstrap/scss/reboot";
+@import "helpers/bootstrap/scss/type";
+@import "helpers/bootstrap/scss/images";
+@import "helpers/bootstrap/scss/containers";
+@import "helpers/bootstrap/scss/grid";
+@import "helpers/bootstrap/scss/forms";
+@import "helpers/bootstrap/scss/buttons";
+@import "helpers/bootstrap/scss/list-group";
+// Helpers
+@import "helpers/bootstrap/scss/helpers";
+
+// Utilities
+@import "helpers/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+body{
+    background-color: $light;
+}
+.form-control{
+    background-color: transparent;
+    color: $light;
+}
+.btn-result{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #FFD366;
+    color: $dark;
+    border: 0;
+    border-radius: 50%;
+    &:hover, :active{
+        background-color: $warning;
+    }
+}
+.check-sec{
+    display: flex;
+    align-items: center;
+}
+.refresh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    .bmi-result{
+        text-align: center;
+    }
+    .refresh-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        bottom: 10%;
+        right: -5%;
+        i{
+            display: block;
+        }
+    }
+}
+.op-item{
+    display: flex;
+    padding: 1rem;
+    background-color: #fff;
+    margin-top: 0.5rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    img{
+        width: 100px;
+    }
+}
